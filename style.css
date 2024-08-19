@@ -1,0 +1,406 @@
+/* Estilo geral */
+body {
+  font-family: Arial, sans-serif; /* Define a fonte padrão do site */
+  margin: 0; /* Remove a margem padrão do body */
+  padding: 0; /* Remove o padding padrão do body */
+}
+
+/* Navbar */
+.navbar {
+  margin-bottom: 20px; /* Adiciona uma margem abaixo da navbar */
+}
+
+.navbar-brand {
+  font-weight: bold; /* Torna o texto da marca em negrito */
+}
+
+.nav-link {
+  margin-right: 15px; /* Adiciona um espaçamento à direita dos links de navegação */
+}
+
+.nav-link.btn-primary {
+  margin-left: 15px; /* Adiciona um espaçamento à esquerda do botão primário */
+}
+
+/* Hero Section */
+.hero {
+  background: url('img/site.png') no-repeat center center; /* Define a imagem de fundo */
+  background-size: cover; /* Faz com que a imagem cubra toda a área do herói */
+  color: white; /* Define a cor do texto como branco */
+  min-height: 100vh; /* Define a altura mínima como 100% da altura da viewport */
+  display: flex; /* Usa flexbox para o layout */
+  align-items: center; /* Alinha o conteúdo verticalmente ao centro */
+  justify-content: center; /* Alinha o conteúdo horizontalmente ao centro */
+  text-align: center; /* Centraliza o texto */
+}
+
+.hero .content h1 {
+  font-size: 2.5rem; /* Define o tamanho da fonte do título */
+  margin-bottom: 20px; /* Adiciona um espaço abaixo do título */
+}
+
+.hero .content p {
+  font-size: 1.25rem; /* Define o tamanho da fonte do parágrafo */
+  margin-bottom: 30px; /* Adiciona um espaço abaixo do parágrafo */
+}
+
+.hero .btn-primary {
+  background-color: #007bff; /* Define a cor de fundo do botão primário */
+  border: none; /* Remove a borda padrão do botão */
+}
+
+/* Clients Section */
+.clients {
+  background-color: #f8f9fa; /* Define a cor de fundo da seção de clientes */
+}
+
+.clients h2 {
+  margin-bottom: 30px; /* Adiciona um espaço abaixo do título da seção */
+  font-size: 2rem; /* Define o tamanho da fonte do título */
+}
+
+.clients img {
+  margin: 10px; /* Adiciona um espaço ao redor das imagens */
+  max-width: 100px; /* Define a largura máxima das imagens */
+  max-height: 100px; /* Define a altura máxima das imagens */
+  object-fit: contain; /* Faz com que as imagens sejam redimensionadas para se ajustar ao contêiner sem distorção */
+}
+
+/* Partners Section (Carrossel) */
+.partners {
+  background-color: #f8f9fa; /* Define a cor de fundo da seção de parceiros */
+  padding: 40px 0; /* Adiciona um padding superior e inferior à seção */
+}
+
+.partners h2 {
+  font-size: 2rem; /* Define o tamanho da fonte do título */
+  margin-bottom: 30px; /* Adiciona um espaço abaixo do título da seção */
+  color: #0e0b0b; /* Define a cor do texto do título */
+}
+
+/* Imagens dentro do carrossel */
+.carousel-item img {
+  max-width: 30%; /* Define a largura máxima das imagens no carrossel */
+  height: auto; /* Mantém a proporção da altura das imagens */
+  margin: 0 15px; /* Adiciona um espaço horizontal ao redor das imagens */
+  object-fit: contain; /* Faz com que as imagens sejam redimensionadas para se ajustar ao contêiner sem distorção */
+  transition: transform 0.3s ease; /* Adiciona uma transição suave para o efeito de hover */
+}
+
+@media (max-width: 768px) {
+  .carousel-item img {
+    max-width: 80%; /* Reduz a largura máxima das imagens em telas menores */
+    margin: 0 5px; /* Ajusta o espaçamento horizontal entre as imagens */
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-item img {
+    max-width: 90%; /* Ajusta ainda mais a largura máxima em telas muito pequenas */
+    margin: 0; /* Remove o espaçamento horizontal */
+  }
+}
+
+/* Efeito de hover nas imagens */
+.carousel-item img:hover, .clients img:hover {
+  transform: scale(1.1); /* Aumenta a escala da imagem ao passar o mouse */
+}
+
+.how-section1 {
+  padding: 5% 0; /* Adiciona padding superior e inferior à seção */
+}
+
+.how-section1 h4 {
+  color: #ffa500; /* Define a cor do título como laranja */
+  font-weight: bold; /* Torna o título em negrito */
+  font-size: 1.5rem; /* Define o tamanho da fonte do título */
+}
+
+.how-section1 .subheading {
+  color: #3931af; /* Define a cor do subtítulo como azul escuro */
+  font-size: 1.25rem; /* Define o tamanho da fonte do subtítulo */
+}
+
+.how-img {
+  text-align: center; /* Centraliza o conteúdo da imagem */
+}
+
+.how-img img {
+  max-width: 100%; /* Define a largura máxima da imagem */
+  height: auto; /* Mantém a proporção da altura da imagem */
+}
+
+@media (max-width: 768px) {
+  .hero .content h1 {
+    font-size: 1.5rem; /* Reduz o tamanho da fonte do título em telas menores */
+  }
+
+  .hero .content p {
+    font-size: 1rem; /* Reduz o tamanho da fonte do parágrafo em telas menores */
+  }
+
+  .how-section1 h4 {
+    font-size: 1.25rem; /* Reduz o tamanho da fonte do título da seção em telas menores */
+  }
+
+  .how-section1 .subheading {
+    font-size: 1rem; /* Reduz o tamanho da fonte do subtítulo em telas menores */
+  }
+}
+
+.implementation-section {
+  padding: 60px 0; /* Adiciona padding superior e inferior à seção */
+  background-color: #f9f9f9; /* Define a cor de fundo da seção */
+}
+
+.step-box {
+  background-color: #ffffff; /* Define a cor de fundo das caixas de passo */
+  padding: 20px; /* Adiciona padding interno às caixas de passo */
+  border-radius: 8px; /* Define o arredondamento dos cantos das caixas de passo */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave às caixas de passo */
+  text-align: left; /* Alinha o texto à esquerda dentro das caixas de passo */
+}
+
+.step-number {
+  font-size: 36px; /* Define o tamanho da fonte do número do passo */
+  font-weight: bold; /* Torna o número do passo em negrito */
+  color: #007bff; /* Define a cor do número do passo */
+  margin-bottom: 15px; /* Adiciona um espaço abaixo do número do passo */
+}
+
+h4 {
+  margin-bottom: 10px; /* Adiciona um espaço abaixo do título h4 */
+  font-size: 20px; /* Define o tamanho da fonte do título h4 */
+  color: #faf8f8; /* Define a cor do texto do título h4 */
+}
+
+.text-muted {
+  color: #efeff0; /* Define a cor do texto como um cinza claro */
+}
+
+.img-fluid {
+  max-width: 100%; /* Define a largura máxima da imagem */
+  height: auto; /* Mantém a proporção da altura da imagem */
+}
+
+.card-pricing.popular {
+  z-index: 1; /* Define a ordem de empilhamento do card de preços popular */
+  border: 3px solid #007bff; /* Adiciona uma borda ao redor do card de preços popular */
+}
+
+.card-pricing .list-unstyled li {
+  padding: .5rem 0; /* Adiciona padding vertical aos itens da lista */
+  color: #f6f7f8; /* Define a cor do texto dos itens da lista */
+}
+
+/*seção de preços */
+
+html, body {
+	min-height: 100vh
+}
+body {
+
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	text-align: center;
+	color: hsl(233, 13%, 49%);
+	font-size: 14px
+}
+body, h1, h2, h3, .list {
+	padding: 0;
+	margin: 0
+}
+* {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box
+}
+.container {
+	max-width: 1140px;
+	margin: 0 auto;
+	padding: 60px 15px 30px 15px
+}
+.row {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	margin: 30px 0
+}
+
+/* Tipografia
+----------------*/
+a {
+	text-decoration: none;
+	-webkit-transition: all .2s;
+	-o-transition: all .2s;
+	transition: all .2s
+}
+h1 {
+	font-size: 1.9em
+}
+.valor {
+	font-size: 2.7em
+}
+
+/* Botões
+------------*/
+.selecione {
+	padding: 40px 0
+}
+.btn {
+	-webkit-transition: all .2s;
+	-o-transition: all .2s;
+	transition: all .2s
+}
+.btn-text {
+	border: none;
+	padding: 0;
+	display: inline-block;
+	color: hsl(234, 14%, 74%);
+	background: transparent
+}
+.btn-check {
+	background: hsl(236, 72%, 79%) -webkit-gradient(linear, left top, right top, from(hsl(236, 72%, 79%)),to(hsl(237, 63%, 64%)));
+	background: hsl(236, 72%, 79%) -o-linear-gradient(left, hsl(236, 72%, 79%),hsl(237, 63%, 64%));
+	background: hsl(236, 72%, 79%) linear-gradient(to right, hsl(236, 72%, 79%),hsl(237, 63%, 64%));
+	border: none;
+	border-radius: 30px;
+	width: 55px;
+	height: 27px;
+	margin: 0 20px;
+	vertical-align: middle;
+	position: relative;
+	cursor:pointer;
+}
+.btn-check:before {
+	content: "";
+	background: white;
+	position: absolute;
+	height: 22px;
+	width: 22px;
+	border-radius: 50%;
+	top: 3px;
+	right: 3px;
+	-webkit-transition: all .2s;
+	-o-transition: all .2s;
+	transition: all .2s
+}
+.btn-check:hover {
+	background: hsl(234, 14%, 74%)
+}
+
+.btn-check-1:before {
+	right: 30px;
+}
+.btn-link {
+	display: block;
+	padding: 10px 25px;
+	border-radius: 6px;
+	background: hsl(236, 72%, 79%) -webkit-gradient(linear, left top, right top, from(hsl(236, 72%, 79%)),to(hsl(237, 63%, 64%)));
+	background: hsl(236, 72%, 79%) -o-linear-gradient(left, hsl(236, 72%, 79%),hsl(237, 63%, 64%));
+	background: hsl(236, 72%, 79%) linear-gradient(to right, hsl(236, 72%, 79%),hsl(237, 63%, 64%));
+	border: 1px solid hsl(237, 63%, 64%);
+	color: white;
+	margin-top: 25px
+}
+.btn-link:hover {
+	background: white;
+	color: hsl(237, 63%, 64%);
+}
+.btn-link-center {
+	background: white;
+	border: 1px solid white;
+	color: hsl(237, 63%, 64%);
+}
+.btn-link-center:hover {
+	background: hsl(236, 72%, 79%) -webkit-gradient(linear, left top, right top, from(hsl(236, 72%, 79%)),to(hsl(237, 63%, 64%)));
+	background: hsl(236, 72%, 79%) -o-linear-gradient(left, hsl(236, 72%, 79%),hsl(237, 63%, 64%));
+	background: hsl(236, 72%, 79%) linear-gradient(to right, hsl(236, 72%, 79%),hsl(237, 63%, 64%));;
+	color: hsl(236, 72%, 79%);
+	color: white
+
+}
+
+/* Card 
+----------*/
+.card {
+	width: 100%;
+	max-width: 330px;
+	background: white;
+	padding: 30px;
+	margin: 15px 0;
+	border-radius: 10px;
+	-webkit-box-shadow: 0 0 3em rgba(100,100,100, .1);
+	        box-shadow: 0 0 3em rgba(100,100,100, .1)
+}
+.card h1 {
+	font-size: 35px;
+	color: #444;
+	padding: 17px 0
+}
+.card h1 span {
+	font-size: 60px;
+	vertical-align: middle;
+	margin-left: 5px
+}
+.list {
+	list-style: none;
+}
+.list li {
+	margin-bottom: -1px;
+	border-top: 1px solid rgba(0, 0, 0, .1);
+	border-bottom: 1px solid rgba(0, 0, 0, .1);
+	padding: 17px 0
+}
+.card-center {
+	background: -webkit-gradient(linear, left top, right top, from(hsl(236, 72%, 79%)),to(hsl(237, 63%, 64%)));
+	background: -o-linear-gradient(left, hsl(236, 72%, 79%),hsl(237, 63%, 64%));
+	background: linear-gradient(to right, hsl(236, 72%, 79%),hsl(237, 63%, 64%));;
+	padding: 50px 30px;
+	color: white;
+	-webkit-box-shadow: 0 0 3em rgba(100,100,100, .1);
+	        box-shadow: 0 0 3em rgba(100,100,100, .1)
+}
+.card-center h1 {
+	color: white
+}
+.card-center li {
+	border-color: rgba(240,240,240, .2);	
+}
+@media (max-width: 900px) {
+	.card-center {
+		padding: 30px;
+	}
+}
+
+/* Rodapé
+--------------*/
+footer {
+	text-align: center;
+	font-size: 12px;
+	padding: 15px
+}
+footer a {
+	color: hsl(233, 13%, 49%)
+}
+.features-section {
+  background: url('img/Design\ sem\ nome.png') no-repeat center center;
+  background-size: cover; /* Faz com que a imagem cubra toda a seção */
+  padding: 40px 0; /* Ajuste o padding conforme necessário */
+  color: #fff; /* Ajuste a cor do texto para garantir um bom contraste */
+}
+
+.features-section h3 {
+  color: #e7e5e5; /* Garante que o título tenha boa visibilidade sobre a imagem */
+}
+
+.features-section .text-muted {
+  color: #ccc; /* Ajuste a cor do texto atenuado conforme necessário */
+}
